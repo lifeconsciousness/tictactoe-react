@@ -22,5 +22,11 @@ module.exports = {
     'no-console': 0,
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
     'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
+    'linebreak-style': 0,
+
+    'react/prop-types': 'off', // not the best practice
+    'react/require-default-props': 0,
+    'react/default-props-match-prop-types': 0,
+    'no-multiple-empty-lines': ['error', { max: 2 }],
   },
 };
