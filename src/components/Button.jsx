@@ -1,23 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Button({ title, color }) {
-  const clickBtn = () => {
-    console.log('click');
-  };
 
+function Button({ title, color, onClick }) {
   return (
-    <button onClick={clickBtn} className="btn" type="button" style={{ backgroundColor: color }}>{title}</button>
+    <button onClick={onClick} className="btn" type="button" style={{ backgroundColor: color }}>{title}</button>
   );
 }
+
 
 Button.defaultProps = {
   btnColor: 'steelblue',
 };
 
 Button.propTypes = {
-  title: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  color: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 

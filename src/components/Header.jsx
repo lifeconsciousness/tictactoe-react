@@ -9,10 +9,14 @@ const headingStyle = {
 
 
 function Header({ title }) {
+  const onClick = () => {
+    console.log('click');
+  };
   return (
     <header className="header">
       <h1 style={headingStyle}>{title}</h1>
       <Button
+        onClick={onClick}
         title="Add"
         color="green"
       />
